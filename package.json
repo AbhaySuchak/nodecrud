@@ -1,0 +1,19 @@
+{
+  "name": "nodecrud",
+  "version": "1.0.0",
+  "description": "this is basic CRUD in angularjs,nodejs,mysql,express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sagar chopada",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angularjs": "0.0.1",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "mysql": "^2.10.2"
+  }
+}

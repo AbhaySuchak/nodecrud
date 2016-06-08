@@ -1,0 +1,25 @@
+angular.module('myApp',[])
+.controller('myController',function($scope,$http){
+	$scope.selectData=function(){
+		$http.get('/select').success(function(data){
+			$scope.users=data;
+			console.log(data);
+		});
+	}
+	$scope.selectData();
+	$scope.insertData=function(){
+		$http.post('/insert',{name:$scope.username}).success(function(callback){
+			$scope.selectData();
+			console.log(callback); 
+		});
+	}
+	$scope.deleteData=function(mid){
+		$http.get('/delete/'+mid).success(function(callback){
+			$scope.selectData();
+			console.log(callback);
+		});
+	}
+	$scope.editData=function(mid){
+		$http.post()
+	}
+});

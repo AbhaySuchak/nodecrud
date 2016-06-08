@@ -1,0 +1,16 @@
+<html ng-app="myApp">
+<head>
+<title>Node Crud</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="js/app.js"></script>
+</head>
+<body ng-controller="myController">
+	<div>
+	<input type="text" ng-model="username" /> <button ng-click="insertData()"> insert</button>
+		<ul ng-repeat="user in users">
+			<li ng-bind="user.f_name"></li><button ng-click="deleteData(user.contact_id)">delete</button>
+			<button ng-click="editData(user.mId)">Edit</button>
+		</ul>
+	</div>
+</body>
+</html>

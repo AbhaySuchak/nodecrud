@@ -1,0 +1,14 @@
+<html ng-app="myApp">
+<head>
+<title>Node Crud</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="js/app.js"></script>
+</head>
+<body ng-controller="myController">
+	<div>
+		<ul ng-repeat="user in users">
+			<li ng-bind="user[$index].name"></li>
+		</ul>
+	</div>
+</body>
+</html>
